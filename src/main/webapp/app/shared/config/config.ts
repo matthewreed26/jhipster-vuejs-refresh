@@ -2,6 +2,7 @@ import Vuex from 'vuex';
 import setupAxiosInterceptors from '@/shared/config/axios-interceptor';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { faChartPie } from '@fortawesome/free-solid-svg-icons/faChartPie';
 import { faSort } from '@fortawesome/free-solid-svg-icons/faSort';
 import { faEye } from '@fortawesome/free-solid-svg-icons/faEye';
 import { faSync } from '@fortawesome/free-solid-svg-icons/faSync';
@@ -51,6 +52,7 @@ export function initVueApp(vue) {
 
 export function initFortAwesome(vue) {
   library.add(
+    faChartPie,
     faSort,
     faEye,
     faSync,

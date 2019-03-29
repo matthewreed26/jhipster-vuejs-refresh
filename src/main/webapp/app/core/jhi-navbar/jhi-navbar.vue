@@ -17,6 +17,12 @@
                         <span>Home</span>
                     </span>
                 </b-nav-item>
+                <b-nav-item to="/dashboard" exact v-if="authenticated">
+                    <span>
+                        <font-awesome-icon icon="chart-pie" />
+                        <span>My Dashboard</span>
+                    </span>
+                </b-nav-item>
                 <b-nav-item-dropdown
                     id="entity-menu"
                     v-if="authenticated"
@@ -26,6 +32,18 @@
                         <font-awesome-icon icon="th-list" />
                         <span>Entities</span>
                     </span>
+                    <b-dropdown-item to="/entity/bank-account">
+                        <font-awesome-icon icon="asterisk" />
+                        <span >BankAccount</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/label">
+                        <font-awesome-icon icon="asterisk" />
+                        <span >Label</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/operation">
+                        <font-awesome-icon icon="asterisk" />
+                        <span >Operation</span>
+                    </b-dropdown-item>
                     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
                 </b-nav-item-dropdown>
                 <b-nav-item-dropdown

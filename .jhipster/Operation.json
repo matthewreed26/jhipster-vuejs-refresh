@@ -1,0 +1,49 @@
+{
+    "name": "Operation",
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "amount",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "operation",
+            "relationshipName": "label",
+            "otherEntityName": "label",
+            "otherEntityField": "label",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "bankAccount",
+            "otherEntityName": "bankAccount",
+            "otherEntityField": "name",
+            "otherEntityRelationshipName": "operation"
+        }
+    ],
+    "changelogDate": "20190329164140",
+    "entityTableName": "operation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
