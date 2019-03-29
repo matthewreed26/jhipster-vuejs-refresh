@@ -1,0 +1,50 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.mycompany.myapp"
+    },
+    "jhipsterVersion": "5.8.1",
+    "applicationType": "monolith",
+    "baseName": "refresh",
+    "packageName": "com.mycompany.myapp",
+    "packageFolder": "com/mycompany/myapp",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "rememberMeKey": "6e20cdc6f095b310bf70281c2b6a1a228a7adf9769e002b5916d596cd4e0f9e71c770e1c86dbfcba29a4d2ea8b1623ee3aa2",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.0.0-beta.1"
+      }
+    ],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprint": "generator-jhipster-vuejs",
+    "blueprintVersion": "1.0.0-beta.1"
+  },
+  "generator-jhipster-vuejs": {
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "jhipsterVersion": "5.8.1",
+    "applicationType": "monolith",
+    "baseName": "refresh",
+    "clientFramework": "vue",
+    "useSass": true,
+    "clientPackageManager": "npm"
+  }
+}
